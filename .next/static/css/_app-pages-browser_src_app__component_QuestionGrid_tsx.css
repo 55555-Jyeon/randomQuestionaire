@@ -1,0 +1,44 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/app/_component/oneCard.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.oneCard_card__yskcw .oneCard_flipper__nmCB_ {
+  cursor: pointer;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  /* content */
+}
+.oneCard_card__yskcw .oneCard_flipper__nmCB_.oneCard_is-flipped__JLJ27 {
+  transform: rotateY(180deg);
+}
+.oneCard_card__yskcw .oneCard_flipper__nmCB_.oneCard_is-flipped__JLJ27 .oneCard_back__h_CIE {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out 0.1s;
+  transition-delay: 0.3s;
+}
+.oneCard_card__yskcw .oneCard_flipper__nmCB_ .oneCard_front__uRm1d {
+  width: 100%;
+  height: 100%;
+  transform: rotateY(0deg);
+  background-color: #84d5eb !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oneCard_card__yskcw .oneCard_flipper__nmCB_ .oneCard_front__uRm1d h1 {
+  color: rgba(255, 255, 255, 0.3450980392);
+  font-size: 4vw;
+}
+.oneCard_card__yskcw .oneCard_flipper__nmCB_ .oneCard_back__h_CIE {
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.oneCard_card__yskcw .oneCard_flipper__nmCB_ .oneCard_innerContainer__DuWCr {
+  width: 100%;
+  height: 100%;
+}
+.oneCard_card__yskcw .oneCard_flipper__nmCB_ .oneCard_innerContainer__DuWCr .oneCard_text__19gIh {
+  margin-top: 10%;
+  word-break: keep-all;
+}
