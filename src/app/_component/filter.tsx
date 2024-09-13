@@ -1,10 +1,6 @@
+import styles from "./filter.module.scss";
 import { Tab, Tabs } from "@mui/material";
-
-export type FilterTabsProps = {
-  categories: string[];
-  currentCategory: string;
-  handleTabChange: (event: React.SyntheticEvent, newValue: string) => void;
-};
+import { FilterTabsProps } from "./type";
 
 /**
  * FilterTabs component
@@ -23,6 +19,7 @@ const FilterTabs = ({
       value={currentCategory}
       onChange={handleTabChange}
       aria-label="question category tabs"
+      className={styles.container}
     >
       {categories.map((category) => (
         <Tab key={category} label={category} value={category} />

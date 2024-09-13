@@ -1,7 +1,7 @@
 "use client";
 
 import { QUESTIONS } from "../../data/QuestionList";
-import { useQuestionsFilter } from "../../utils/filterQuestions.utils";
+import { useQuestionsFilter } from "../../hooks/useQuestionsFilter";
 import FilterTabs from "./_component/filter";
 import QuestionGrid from "./_component/QuestionGrid";
 import styles from "./page.module.scss";

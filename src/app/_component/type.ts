@@ -10,3 +10,9 @@ export type OneCardProps = {
 export type QuestionGridProps = {
   QuestionList: QuestionItem[];
 };
+
+export type FilterTabsProps = {
+  categories: string[];
+  currentCategory: string;
+  handleTabChange: (event: React.SyntheticEvent, newValue: string) => void;
+};
