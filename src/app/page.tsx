@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import OneCard from "./_component/OneCard";
-import { QuestionItem, Tquestions } from "../../types/type";
-import { questions } from "../../mocks/QuestionList";
+import { QuestionItem } from "../../types/type";
 import { Grid } from "@mui/material";
 import styles from "./page.module.scss";
+import { questions } from "../../data/QuestionList";
+import { QuestionListType } from "../../data/type";
 
 export default function Home() {
   const [randomQuestions, setRandomQuestions] = useState<QuestionItem[]>([]);
@@ -13,7 +14,7 @@ export default function Home() {
   const initializeQuestions = (): QuestionItem[] => {
     const allQuestions: QuestionItem[] = [];
 
-    (Object.entries(questions) as [keyof Tquestions, string[]][]).forEach(
+    (Object.entries(questions) as [keyof QuestionListType, string[]][]).forEach(
       ([category, questions]) => {
         questions.forEach((question) => {
           allQuestions.push({ question, category });

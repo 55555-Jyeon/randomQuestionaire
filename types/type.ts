@@ -1,20 +1,13 @@
-export type Tquestions = {
-  CS: string[];
-  TS: string[];
-  JS: string[];
-  "HTML/CSS": string[];
-  React: string[];
-  project: string[];
-  basics: string[];
-};
+import { QuestionListType } from "../data/type";
 
 export type QuestionItem = {
   question: string;
-  category: keyof Tquestions;
+  category: keyof QuestionListType;
 };
 
 export type TProps = {
-  idx: number;
-  category: string;
   question: string;
+  category: string | number;
+  key: string;
+  idx: number;
 };
