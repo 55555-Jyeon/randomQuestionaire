@@ -5,7 +5,11 @@ import { QuestionGridProps } from "./type";
 
 const QuestionGrid = ({ QuestionList }: QuestionGridProps) => {
   return (
-    <Grid sx={{ flexGrow: 1 }} container spacing={2}>
+    <Grid
+      container
+      spacing={2}
+      sx={{ flexGrow: 1, justifyContent: "center", alignItems: "center" }}
+    >
       {QuestionList.map((item: QuestionItem, idx: number) => (
         <OneCard key={`${item.category}-${idx}`} idx={idx} {...item} />
       ))}
