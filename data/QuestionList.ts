@@ -8,7 +8,7 @@ import { ReactQuestions } from "./byTopic/react";
 import { TSquestions } from "./byTopic/typeScript";
 import { QuestionListType } from "./type";
 
-export const questions: QuestionListType = {
+export const QUESTIONS: QuestionListType = {
   CS: CSquestions,
   HTML: HTMLquestions,
   CSS: CSSquestions,

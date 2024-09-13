@@ -1,5 +1,6 @@
 .card {
   .flipper {
+    cursor: pointer;
     transition: 1s;
     transform-style: preserve-3d; // 3D 변환 스타일 유지
     position: relative;

@@ -1,14 +1,14 @@
 "use client";
 
 import styles from "./oneCard.module.scss";
-import { TProps } from "../../../types/type";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 import { useState } from "react";
+import { OneCardProps } from "./type";
 
-export default function OneCard({ idx, category, question }: TProps) {
+const OneCard = ({ idx, category, question }: OneCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const handleShowCard = (e: React.MouseEvent<HTMLDivElement>) => {
     setIsFlipped(!isFlipped);
@@ -46,4 +46,5 @@ export default function OneCard({ idx, category, question }: TProps) {
       </Card>
     </Grid>
   );
-}
+};
+export default OneCard;
