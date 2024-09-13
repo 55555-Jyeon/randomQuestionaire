@@ -4,7 +4,7 @@
 
 # Pick & Flip
 
-Pick & Flip은 FE 면접 질문 목록을 랜덤으로 생성해주는 간단한 토이프로젝트입니다. 
+Pick & Flip은 FE 면접 질문 목록을 랜덤으로 생성해주는 간단한 토이프로젝트입니다.
 
 <br />
 
@@ -64,8 +64,6 @@ https://github.com/user-attachments/assets/a53a988b-efca-4292-976e-8f27a1ca1434
     </td>
   </tr>
 </table>
-
-
 
 <br />
 <br />
